@@ -1,6 +1,6 @@
 header {
-    padding: 20px;
-  }
+    height: 55px;
+}
   
 .container {
     display: flex;

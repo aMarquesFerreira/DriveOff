@@ -19,6 +19,7 @@ import { HomeLandingComponent } from './home-landing/home-landing.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { HomeLanding2Component } from './home-landing2/home-landing2.component';
 import { Header2Component } from './header2/header2.component';
+import { TemplateComponent } from './template/template.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { Header2Component } from './header2/header2.component';
     HomeLandingComponent,
     SobreNosComponent,
     HomeLanding2Component,
-    Header2Component
+    Header2Component,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
