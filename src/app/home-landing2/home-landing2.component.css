@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #FFF9F4;
+    height: 100vh;
+    grid-template-rows: 1fr;
+}
+
+
+
+.container img{
+    justify-self: center;
+    /*align-self: center;*/
+    width: 80%;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}

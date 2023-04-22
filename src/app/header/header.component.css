@@ -1,0 +1,89 @@
+header {
+  background: #FFF9F4;
+  padding: 0;
+}
+
+a {
+  color: #3D3D3D;
+  position: relative;
+  z-index: 1; /* set a higher z-index */
+}
+
+a.logo:hover {
+  background: #587f92;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+a.logo {
+  font-size: 22px;
+  font-family: 'Anton';
+  padding: 1em;
+  letter-spacing: 0.5px;
+  padding-right: 28px;
+}
+
+a.mItem {
+  padding-right: 1.5em;
+  padding-left: 1em;
+}
+
+a:hover::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #587f92;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0; /* set a lower z-index */
+}
+
+a::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #587f92;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0; /* set a lower z-index */
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a::before {
+  width: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}

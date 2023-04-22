@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #f03838;
+    height: 100vh;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; /* add margin property to center the container */
+}
+
+.container img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    grid-column: 2 / 5;
+    filter: saturate(150%) contrast(80%);
+    opacity: 0.97;
+}
+
+
+
+

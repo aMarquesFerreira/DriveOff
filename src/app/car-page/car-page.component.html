@@ -1,0 +1,50 @@
+<app-not-found [visible]="!car" notFoundMessage="Product Not Found!"
+resetLinkText="Back To Homepage"></app-not-found>
+
+<div *ngIf="car" class="container">
+    <img [src]="car.imageUrl" [alt]="car.name" />
+    
+    <div class="details">
+        <div class="header">
+            <span class="name">
+                {{car.name}}
+            </span>
+            <span class="favorite {{car.favorite?'':'not'}}">
+                ❤
+            </span>
+        </div>
+        <div class="rating">
+            <star-rating
+            [value]="car.stars"
+            [totalstars]="5"
+            checkedcolor="red"
+            uncheckedcolor="black"
+            size="30px"
+            [readonly]="true">
+            </star-rating>
+        </div>
+    
+        <div class="origins">
+            <span *ngFor="let origin of car.origins">
+                {{origin}}
+            </span>
+        </div>
+    
+        <div class="tags">
+            <app-tags [carPageTags]="car.tags" justifyContent="start"></app-tags>
+        </div>
+    
+        <div class="cook-time">
+            <span>
+                Time to cook about <strong>{{car.cookTime}}</strong> minutes
+            </span>
+        </div>
+    
+        <div class="price">
+            <span>{{ car.price}} &euro;</span>
+        </div>
+    
+        <button (click)="addToCart()">Add To Cart</button>
+    </div>
+    
+    </div>
