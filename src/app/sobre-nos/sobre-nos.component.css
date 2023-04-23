@@ -25,7 +25,7 @@ section{
 .container .box{
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 520px;
     color: #fff;
     border: 1px solid #fff;
     padding: 10px;
@@ -109,16 +109,61 @@ section{
 
 .item-image{
     position: relative;
-    background: #3007ff;
+    background: #5163A5;
     width: 500px;
-    height: 100px;
+    height: 35%;
     display: grid;
     justify-content: center;
     align-items: top;
-    padding: 5px;
 }
 
 .item-image img{
     padding: 0px;
     width: 500px;
 }
+
+
+.div1a4{
+    grid-column-start: 1;
+    grid-column-end: 4; /* end at the fourth column */
+    grid-row: 2;
+}
+
+.div1a3{
+    grid-column-start: 1;
+    grid-column-end: 3; /* end at the fourth column */
+    grid-row: 2;
+}
+
+.item-h1{
+    position: relative;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+
+.item-h1 p{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.div4a6{
+    grid-column-start: 4;
+    grid-column-end: 6; /* end at the fourth column */
+    grid-row: 2;
+}
+
+.div3a6{
+    grid-column-start: 3;
+    grid-column-end: 6; /* end at the fourth column */
+    grid-row: 2;
+}
+
+.row3{
+    grid-row: 3;
+    display: grid;
+    justify-items: end;
+    align-items: start;
+}
+

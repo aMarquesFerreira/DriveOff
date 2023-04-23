@@ -1,8 +1,6 @@
 .container {
     display: grid;
     gap: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #FFF9F4;
     height: 100vh;
@@ -10,6 +8,9 @@
 }
 
 
+img {
+    transition: transform 0.5s ease-in-out;
+}
 
 .container img{
     justify-self: center;

@@ -1,5 +1,5 @@
 <div class="container">
-    <img src="/assets/images/Homepage/comTitulo.svg" alt="Image">
+    <img #image src="/assets/images/Homepage/comTitulo.svg" alt="Image" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
     <div class="porSi">
         <p>Tratamos de tudo</p>
         <p>por si !</p>
@@ -13,7 +13,7 @@
         <span class="arrow-right"></span>
     </div>
     <div class="btnContainer">
-        <button class="leftBtn">Compra</button>
+        <button class="leftBtn" routerLink="/home">Compra</button>
         <button class="rightBtn">Venda</button>
     </div>
 </div>
