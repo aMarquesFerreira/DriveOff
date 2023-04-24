@@ -1,4 +1,5 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import * as THREE from 'three';
 
 @Component({
   selector: 'app-home-landing2',

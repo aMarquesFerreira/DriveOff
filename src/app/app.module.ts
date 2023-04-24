@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
-import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './search/search.component';
 import {FormsModule} from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
@@ -20,6 +18,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { HomeLanding2Component } from './home-landing2/home-landing2.component';
 import { Header2Component } from './header2/header2.component';
 import { TemplateComponent } from './template/template.component';
+import { ThreeSceneComponent } from './three-scene/three-scene.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +33,8 @@ import { TemplateComponent } from './template/template.component';
     SobreNosComponent,
     HomeLanding2Component,
     Header2Component,
-    TemplateComponent
+    TemplateComponent,
+    ThreeSceneComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +42,6 @@ import { TemplateComponent } from './template/template.component';
     ButtonModule,
     TableModule,
     TooltipModule,
-    RatingModule,
     FormsModule
   ],
   providers: [],
