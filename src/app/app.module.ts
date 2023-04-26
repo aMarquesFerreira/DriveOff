@@ -19,6 +19,14 @@ import { HomeLanding2Component } from './home-landing2/home-landing2.component';
 import { Header2Component } from './header2/header2.component';
 import { TemplateComponent } from './template/template.component';
 import { ThreeSceneComponent } from './three-scene/three-scene.component';
+import { TestarAngulatTHREEComponent } from './testar-angulat-three/testar-angulat-three.component';
+import * as THREE from 'three';
+import { extend } from 'angular-three';
+import { NewHomeComponent } from './new-home/new-home.component';
+import { NewThreeComponent } from './new-three/new-three.component';
+
+extend(THREE);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +42,10 @@ import { ThreeSceneComponent } from './three-scene/three-scene.component';
     HomeLanding2Component,
     Header2Component,
     TemplateComponent,
-    ThreeSceneComponent
+    ThreeSceneComponent,
+    TestarAngulatTHREEComponent,
+    NewHomeComponent,
+    NewThreeComponent
   ],
   imports: [
     BrowserModule,

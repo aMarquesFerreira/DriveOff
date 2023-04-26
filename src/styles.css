@@ -10,14 +10,16 @@
 
 html{
     font-size: 16px;
+    overflow-x: hidden;
 }
 
+/*TODO*/
 body{
     max-width: 1920px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Prompt', sans-serif;
-    margin: 30px;
+    /*margin: 30px;*/
 }
 
 
@@ -31,4 +33,13 @@ h1{
     font-weight: 700;
     font-size: 32px;
 }
+
+
+/*app-three-scene{
+    position: fixed;
+    top:0;
+    left: 0;
+}*/
+
+
 

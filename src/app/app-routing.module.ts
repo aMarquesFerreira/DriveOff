@@ -7,6 +7,7 @@ import { HomeLandingComponent } from './home-landing/home-landing.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { HomeLanding2Component } from './home-landing2/home-landing2.component';
 import { ThreeSceneComponent } from './three-scene/three-scene.component';
+import {NewThreeComponent} from './new-three/new-three.component'
 
 const routes: Routes = [
   {path:'', component:HomeLanding2Component},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'car/:id', component:CarPageComponent},
   {path:'cart-page', component: CartPageComponent},
   {path:'sobre-nos', component: SobreNosComponent},
-  {path:'three', component: ThreeSceneComponent}
+  {path:'three', component: ThreeSceneComponent},
+  {path:'newThree', component: NewThreeComponent}
 ];
 
 @NgModule({

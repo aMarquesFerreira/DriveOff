@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as THREE from 'three';
+
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 @Component({
@@ -18,12 +19,17 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const canvas = document.querySelector('#bg') as HTMLCanvasElement;
+
+
 const renderer = new THREE.WebGLRenderer({
   canvas,
+  alpha: true
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth * 0.5, window.innerHeight * 0.5);
+renderer.setClearColor(0x000000, 0);
+
 camera.position.setZ(30);
 camera.position.setX(-3);
 
@@ -56,8 +62,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 
 // Background
-const spaceTexture = new THREE.TextureLoader().load('');
-scene.background = spaceTexture;
+//const spaceTexture = new THREE.TextureLoader().load('/assets/images/threejs/space.jpg');
+//scene.background = spaceTexture;
 
 
 function animate() {
