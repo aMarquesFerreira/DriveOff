@@ -8,9 +8,11 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { HomeLanding2Component } from './home-landing2/home-landing2.component';
 import { ThreeSceneComponent } from './three-scene/three-scene.component';
 import {NewThreeComponent} from './new-three/new-three.component'
+import { NewHomeComponent } from './new-home/new-home.component';
 
 const routes: Routes = [
-  {path:'', component:HomeLanding2Component},
+  {path:'', component: NewHomeComponent},
+  {path:'home2', component:HomeLanding2Component},
   {path:'home', component:HomeComponent},
   {path:'search/:searchTerm', component:HomeComponent},
   {path:'tag/:tag', component:HomeComponent},
@@ -18,7 +20,8 @@ const routes: Routes = [
   {path:'cart-page', component: CartPageComponent},
   {path:'sobre-nos', component: SobreNosComponent},
   {path:'three', component: ThreeSceneComponent},
-  {path:'newThree', component: NewThreeComponent}
+  {path:'newThree', component: NewThreeComponent},
+  {path:'newHome', component: NewHomeComponent}
 ];
 
 @NgModule({

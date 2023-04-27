@@ -41,6 +41,31 @@ nav ul{
     position: absolute;
     font-size: 3rem;
     left: 50%;
-    top: 25%;
+    top: 35%;
     transform: translate(-50%,-25%);
+}
+
+.entrar{
+    color: white;
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-25%);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* initial border color is transparent */
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+}
+
+.entrar:hover {
+    transform: translate(-50%, -30%);
+    border-color: #5163A5; /* change border color to black on hover */
+    transition-duration: 0.5s; /* set the duration of the transition */
 }

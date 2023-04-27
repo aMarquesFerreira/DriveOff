@@ -44,7 +44,7 @@ export class CarService {
         favorite: false,
         origins: ['italy'],
         stars: 4.5,
-        imageUrl: '/assets/images/cars/red-sports-car-png-1.png',
+        imageUrl: '/assets/images/cars/smart.jpeg',
         tags: ['FastFood', 'Pizza', 'Lunch'],
       },
       {

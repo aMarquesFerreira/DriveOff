@@ -24,6 +24,7 @@ import * as THREE from 'three';
 import { extend } from 'angular-three';
 import { NewHomeComponent } from './new-home/new-home.component';
 import { NewThreeComponent } from './new-three/new-three.component';
+import { NewThree2Component } from './new-three2/new-three2.component';
 
 extend(THREE);
 
@@ -45,7 +46,8 @@ extend(THREE);
     ThreeSceneComponent,
     TestarAngulatTHREEComponent,
     NewHomeComponent,
-    NewThreeComponent
+    NewThreeComponent,
+    NewThree2Component
   ],
   imports: [
     BrowserModule,

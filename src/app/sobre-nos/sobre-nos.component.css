@@ -109,6 +109,7 @@ section{
 
 .item-image{
     position: relative;
+    /*background: #69859B;*/
     background: #5163A5;
     width: 500px;
     height: 35%;
@@ -160,10 +161,12 @@ section{
     grid-row: 2;
 }
 
+
 .row3{
     grid-row: 3;
     display: grid;
     justify-items: end;
     align-items: start;
 }
+
 
