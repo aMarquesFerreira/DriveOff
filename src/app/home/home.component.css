@@ -1,48 +1,35 @@
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li a{
-    
-    border-bottom: 1px solid rgb(231, 231, 231);
-    
-    overflow: hidden;
-
-}
-
-ul li{
-    max-width: 400px;
-}
-
-
-
-li a:hover{
+a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
 
 
-.content{
+.content {
+    background-color: #bacfdf;
     padding: .5rem 1rem;
     position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 
 .favorite{
-    color: red;
+    color: #0083e1;
     position: absolute;
     top: .5rem;
     right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .favorite.not{
-    color: grey;
+    color: white;
+}
+
+.product-item-footer.no{
+  display: none;
 }
 
 
@@ -71,26 +58,143 @@ li a:hover{
 }
 
 
-.cook-time{
-    font-size: .8rem;
-    flex: 3;
-    text-align: right;
-}
+.product-item-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+  
+  
+  .cook-time1 {
+    font-size: .79rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    justify-self: start;
+  }
+  
+  .cook-time2 {
+    font-size: .79rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    justify-self: start;
+  }
+  
+  .cook-time3 {
+    font-size: .79rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row:1;
+    justify-self: start;
+  }
+
+  .cook-time4{
+    font-size: .79rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  .cook-time5{
+    font-size: .79rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1;
+    justify-self: start;
+  }
+  
+
+  .cook-time6{
+    font-size: .79rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  .cook-time7{
+    font-size: .79rem;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 1;
+    justify-self: start;
+  }
+  
+
+  .cook-time8{
+    font-size: .79rem;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 2;
+    justify-self: start;
+  }
+  
+  
+  
 
 .price{
-    color:#414141;
-    margin-top: .7rem;
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    text-align:start;
 }
 
-.aContainer{
+.priceMonth{
+  font-size: 15px;
+    color: black;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  text-align: end;
+}
+
+.search{
+    padding-top: 30px;
+}
+
+.color{
+    background-color: white;
+}
+
+
+.gridContainer{
     
-    border: 1px solid  rgb(231, 231, 231);
-    border-radius: 1rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    color: #e72929;
+    margin-top: 100px;
+    position:relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 500px 500px 500px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/*.gridContainer > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }*/
+
+.aContainer{
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);  
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  grid-column: span 2; 
+
 }
 
 
@@ -98,3 +202,58 @@ li a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
+
+
+a img{
+    width: 100%;
+}
+
+.alignImage{
+    background-color: #F2F2F2;
+    height: 300px;
+}
+
+
+ul li a{
+    
+    overflow: hidden;
+
+}
+
+
+.name{
+    font-size: 17px;
+}
+
+
+#plusDiv{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#plusDiv .plus-icon {
+  transition: transform 0.5s ease; /* adjust the duration to your preference */
+}
+
+#plusDiv .plus-icon:hover {
+  transform: rotate(45deg) scale(1.2); /* increase size by 20% */
+}
+
+#plusDiv img{
+  width: 7%;
+}
+
+.plus-icon{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.plus-icon :hover{
+  transform: translate(30px);
+}
+
+/*
+.rotate {
+  transform: rotate(90deg);
+}
+*/

@@ -45,15 +45,14 @@ nav ul{
     transform: translate(-50%,-25%);
 }
 
-.entrar{
+#entrar{
     color: white;
     z-index: 2;
     position: absolute;
     font-size: 1rem;
     left: 50%;
-    top: 75%;
+    top: 85%;
     transform: translate(-50%,-25%);
-    padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -62,10 +61,67 @@ nav ul{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Prompt', sans-serif;
     font-size: 18px;
+    padding: 5px 10px;
 }
 
-.entrar:hover {
+#entrar:hover {
+    padding: 10px 20px;
     transform: translate(-50%, -30%);
     border-color: #5163A5; /* change border color to black on hover */
+    transition-duration: 0.5s; /* set the duration of the transition */
+}
+
+
+#login{
+    color: white;
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-25%);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* initial border color is transparent */
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#login:hover {
+    padding: 10px 20px;
+    transform: translate(-50%, -30%);
+    border-color: #c83d62; /* change border color to black on hover */
+    transition-duration: 0.5s; /* set the duration of the transition */
+}
+
+
+
+#signup{
+    color: white;
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-25%);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* initial border color is transparent */
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#signup:hover {
+    padding: 10px 20px;
+    transform: translate(-50%, -30%);
+    border-color: #46a756; /* change border color to black on hover */
     transition-duration: 0.5s; /* set the duration of the transition */
 }

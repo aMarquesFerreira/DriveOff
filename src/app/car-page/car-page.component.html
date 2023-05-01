@@ -9,9 +9,9 @@ resetLinkText="Back To Homepage"></app-not-found>
             <span class="name">
                 {{car.name}}
             </span>
-            <span class="favorite {{car.favorite?'':'not'}}">
-                ❤
-            </span>
+            <div class="favorite {{car.favorite?'':'not'}}">
+                <img class="close-icon" src="/assets/icons/close.svg" alt="icon" routerLink="/home">
+            </div>
         </div>
         <div class="rating">
             RATING
@@ -29,15 +29,16 @@ resetLinkText="Back To Homepage"></app-not-found>
     
         <div class="cook-time">
             <span>
-                Time to cook about <strong>{{car.cookTime}}</strong> minutes
+                Time to cook about <strong>{{car.cc}}</strong> minutes
             </span>
         </div>
     
         <div class="price">
             <span>{{ car.price}} &euro;</span>
         </div>
-    
-        <button (click)="addToCart()">Add To Cart</button>
+        
+        <button class="goFavs" (click)="addToCart()">Adicionar e ver</button>
+        <button class="btnHome"  routerLink="/home">Sair</button>
     </div>
     
     </div>

@@ -15,7 +15,7 @@ img{
     border-radius: 3rem;
     flex:1 0;
     object-fit: cover;
-    height: 25rem;
+    height: 30rem;
     margin: 1rem;
 }
 
@@ -38,11 +38,6 @@ img{
 .details .name{
     font-size: 2rem;
     font-weight: bold;
-}
-
-.details .favorite{
-    color: #e72929;
-    font-size: 2.5rem;
 }
 
 .details .favorite.not{
@@ -85,16 +80,49 @@ img{
 }
 
 .details button{
-    color: white;
-    background: #e72929;
-    border: none;
     font-size: 1.2rem;
     padding: 1rem;
     border-radius: 10rem;
-    outline: none;
+    margin-bottom: 20px;
 }
 
 .details button:hover{
     opacity: .9;
     cursor: pointer;
+}
+
+
+.goFavs{
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    background: #5163A5;
+    align-self: center;
+    box-shadow: 2px 2px 6px #888888; /* Add box shadow */
+}
+
+.btnHome{
+    color: rgb(10, 10, 10);
+    width: 100%;
+    align-self: center;
+    box-shadow: 2px 2px 6px #888888; /* Add box shadow */
+    border: none
+}
+
+.favorite img{
+    width: 20%;
+    height: 20%;
+    transition: transform 0.5s ease; /* adjust the duration to your preference */
+}
+
+.favorite img:hover{
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.favorite{
+    text-align: end;
 }

@@ -1,37 +1,87 @@
+<div class="color">
+<div class="search">
 <app-search></app-search>
+</div>
 <app-tags></app-tags>
 <app-not-found [visible]="!cars || cars.length <= 0" resetLinkText="Reset Search"></app-not-found>
-<ul>
-    <li class="aContainer" *ngFor="let car of cars">
-            <a routerLink="/car/{{car.id}}">
+<div class="gridContainer">
+    <div class="aContainer" *ngFor="let car of cars">
+    <div class="alignImage">
+        <a routerLink="/car/{{car.id}}">
             <img src="{{car.imageUrl}}" alt="">
         </a>
+    </div>
             <div class="content">
                 <div class="name">
                     {{car.name}}
                 </div>
-                <span class="favorite {{car.favorite?'':'not'}}" (click)="markFavourite(car)">
+                <div class="price">
+                    <p>A pronto</p>
+                    <span>
+                        {{car.price}} &euro;
+                    </span>
+                </div>  
+
+                <div class="priceMonth">
+                    <p>Ao Mês</p>
+                    <span>
+                        {{car.price_per_month}} &euro;
+                    </span>
+                </div>  
+                <span class="favorite {{car.favorite?'':'not'}}" (click)="markFavourite(car)" (click)="addToCart(car)">
                     ❤
                 </span>
-                <div class="stars">
+                
+                <div id="plusDiv">
+                    <img src="/assets/icons/minus.svg" alt="add icon">
+                    <img src="/assets/icons/minus.svg" alt="add icon">
+                    <img class="plus-icon" src="/assets/icons/add.svg" alt="add icon" (click)="markSeeFooter(car)">
+                    <img src="/assets/icons/minus.svg" alt="add icon">
+                    <img src="/assets/icons/minus.svg" alt="add icon">
                 </div>
-                <div class="product-item-footer">
-                    <div class="origins">
+
+
+                <div class="product-item-footer  {{car.showDetails?'':'no'}}">
+                    <!--<div class="origins">
                         <span *ngFor="let origin of car.origins">
                                 {{origin}}
                         </span>
-                    </div>
-                    <div class="cook-time">
+                    </div>-->
+                    <div class="cook-time1">
                         <span>🕛</span>
-                        {{car.cookTime}}
+                        {{car.cc}}
                     </div>
-                </div>
-                <div class="price">
-                    <span>
-                        {{ car.price}} &euro;
-                    </span>
+                    <div class="cook-time2">
+                        <span>🕛</span>
+                        {{car.kms}}
+                    </div>
+                    <div class="cook-time3">
+                        <span>🕛</span>
+                        {{car.type_of_fuel}}
+                    </div>
+                    <div class="cook-time4">
+                        <span>🕛</span>
+                        {{car.year}}
+                    </div>
+                    <div class="cook-time5">
+                        <span>🕛</span>
+                        {{car.color}}
+                    </div>
+                    <div class="cook-time6">
+                        <span>🕛</span>
+                        {{car.cc}}
+                    </div>
+                    <div class="cook-time7">
+                        <span>🕛</span>
+                        {{car.color}}
+                    </div>
+                    <div class="cook-time8">
+                        <span>🕛</span>
+                        {{car.cc}}
+                    </div>
                 </div>
                 
             </div>
-    </li>
-</ul>
+    </div>
+</div>
+</div>

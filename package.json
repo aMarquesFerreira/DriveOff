@@ -19,6 +19,7 @@
     "@angular/platform-browser": "^15.2.8",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.2.8",
+    "@tweenjs/tween.js": "^20.0.3",
     "angular-three": "^1.9.16",
     "gsap": "^3.11.5",
     "primeicons": "^6.0.1",
